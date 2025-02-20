@@ -413,7 +413,31 @@ code {
 <li>Conditional Mean &amp; Unconditional Mean</li>
 <li>PRF (population regression function) states that the expected value of the distribution of Y given Xi is functionally related to Xi i.e. E(Y | Xi) = f (Xi)</li>
 <li>Linearity - 1. Linear in Var , 2. Linear in Params</li>
+<li>Granted that the SRF is but an approximation of the PRF, can we devise a rule or a method that will make this approximation as “close” as possible?</li>
 </ul>
+<h2 id="two-variable-regression-model-th-problem-of-estimation">TWO-VARIABLE REGRESSION MODEL: TH PROBLEM OF ESTIMATION</h2>
+<h4 id="the-method-of-ordinary-least-squares">THE METHOD OF ORDINARY LEAST SQUARES</h4>
+<ul>
+<li>Yi = Ŷi + ûi
+=&gt; ûi = Yi − Ŷi
+= Yi − β̂1 − β̂2 Xi</li>
+<li>Now given n pairs of observations on Y and X, we would like to determine the SRF in such a manner that it is as close as possible to the actual Y. To this end, we may adopt the following  criterion: Choose the SRF in such a way that the sum of the residuals ûi = (Yi − Ŷi ) is as small as possible.</li>
+<li>That is minimize the sum of the sqaures of ûi.</li>
+</ul>
+<h4 id="assumptions-of-the-clrm">Assumptions of the CLRM</h4>
+<ol>
+<li>The regression model is linear in the parameters, i.e. Yi = β1 + β2Xi + ui</li>
+<li>X values are ﬁxed in repeated sampling</li>
+<li>Zero mean value of disturbance ui, i.e. E(ui |Xi) = 0</li>
+<li>Homoscedasticity or equal variance of ui, i.e. var (ui | Xi) = E [ui − E(ui | Xi)]^2 = E (ui^2 | Xi) = σ^2</li>
+<li>No autocorrelation between the disturbances, i.e. cov (ui, uj | Xi, Xj ) = E {[ui − E (ui)] | Xi }{[uj − E(uj)] | Xj } = E(ui | Xi)(uj | Xj) = 0</li>
+<li>Zero covariance between ui and Xi or E(uiXi) = 0.</li>
+<li>The number of observations n must be greater than the number of parameters to be estimated</li>
+<li>Variability in X values, i.e. var (X ) must be a ﬁnite positive number.</li>
+<li>The regression model is correctly speciﬁed</li>
+<li>There is no perfect multicollinearity. That is, there are no perfect linear relationships among the explanatory variables</li>
+</ol>
+<p><img src="image.png" alt="alt text"></p>
 
 </body>
 </html>
