@@ -34,3 +34,6 @@
 - The researcher should always keep in mind that the results of research are only as good as the quality of the data.
 
 ## TWO-VARIABLE REGRESSION ANALYSIS: SOME BASIC IDEAS
+- Conditional Mean & Unconditional Mean
+- PRF (population regression function) states that the expected value of the distribution of Y given Xi is functionally related to Xi i.e. E(Y | Xi) = f (Xi)
+- Linearity - 1. Linear in Var , 2. Linear in Params
